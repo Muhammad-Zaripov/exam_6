@@ -1,7 +1,7 @@
+import 'package:exam_project/features/home/presentation/screens/album_screen.dart';
+import 'package:exam_project/features/home/presentation/widgets/comment_widget.dart';
 import 'package:flutter/material.dart';
-
 import '../../../../core/constants/app_assets.dart';
-import '../screens/home_screen.dart';
 
 class UserAvatarWidget extends StatelessWidget {
   const UserAvatarWidget({super.key});
@@ -68,7 +68,7 @@ class UserAvatarWidget extends StatelessWidget {
                   showModalBottomSheet(
                     context: context,
                     builder: (context) {
-                      return MyWidget();
+                      return CommentWidget();
                     },
                   );
                 },
@@ -97,8 +97,14 @@ class UserAvatarWidget extends StatelessWidget {
               ),
             ],
           ),
-          Column(
-            children: [Image.asset(AppAssets.disc, width: 50, height: 50)],
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (cxt) => AlbumsScreen()),
+              );
+            },
+            child: Image.asset(AppAssets.disc, width: 50, height: 50),
           ),
         ],
       ),
