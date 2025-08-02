@@ -1,4 +1,4 @@
-import 'package:exam_project/features/home/presentation/screens/album_screen.dart';
+import 'package:exam_project/features/albums/presentation/screens/album_screen.dart';
 import 'package:exam_project/features/home/presentation/widgets/comment_widget.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_assets.dart';

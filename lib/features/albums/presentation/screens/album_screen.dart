@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:exam_project/features/home/data/repositories/album_repository.dart';
-import 'package:exam_project/features/home/data/models/album_model.dart';
+import 'package:exam_project/features/albums/data/repositories/album_repository.dart';
+import 'package:exam_project/features/albums/data/models/album_model.dart';
 import '../widgets/album_header.dart';
 
 class AlbumsScreen extends StatelessWidget {

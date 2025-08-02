@@ -1,10 +1,6 @@
-import 'package:exam_project/features/home/presentation/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'app/main_app.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-
-import 'features/home/data/models/album_model.dart';
-import 'features/home/data/repositories/album_repository.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
